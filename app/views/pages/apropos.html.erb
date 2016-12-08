@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="styles.css" />
+  <title>A Propos</title>
+  <meta name="description" content="" />
+  <meta name="robots" content="index, follow" />
+  <style>
+body {
+margin: 0px;
+padding: 0px;
+width: 100%;
+}
+
+.nav {
+  height: 90px;
+  background-color: #F5F5F5;
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav p {
+  font-size: 24px;
+  font-family: Verdana;
+  margin: auto;
+  font-weight: bold;
+  padding: 25px 20px;
+}
+
+.nav p a {
+  text-decoration: none;
+}
+
+.nav p a:link {
+  color: black;
+}
+
+.nav p a:visited {
+  color: black; 
+}
+
+.nav ul {
+  display: inline;
+}
+
+.nav li {
+  display: inline;
+  position: relative;
+  margin: 50px;
+  margin-top: -47px;
+  float: right;
+  font-weight: bold;
+  font-family: Verdana;
+}
+
+.jumbotron {
+  height: 440px;
+  background: url(https://alphacollege.com/wp-content/uploads/2016/08/on-in-dublin.jpg);
+  background-size: cover;
+  background-position: center center;
+  border: 1px solid grey;
+}
+
+.jumbotron h1 {
+  color: #F5F5F5;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px black;
+  padding-top: 110px;
+}
+
+.jumbotron h2 {
+  color: #F5F5F5;
+  font-family: Verdana;
+  font-size: 25px;
+  text-shadow: 2px 2px 2px black; 
+}
+
+.jumbotron button {
+  background-color: #1a75ff;
+  border-radius: 5px;
+  border: 2px solid #1a75ff;
+  color: #F5F5F5;
+  align: center;
+  text-shadow: 1px 1px 1px black;
+  font-size: 18px;
+  padding: 12px 25px;
+  margin-top: 20px; 
+  font-family: Verdana; 
+}
+
+.jumbotron button:hover {
+  background-color: #4d94ff;
+  border-radius: 5px;
+  border: 2px solid #4d94ff;
+  color: #F5F5F5;
+  align: center;
+  text-shadow: 1px 1px 1px black;
+  font-size: 18px;
+  padding: 12px 25px;
+  margin-top: 20px; 
+  font-family: Verdana; 
+}
+
+.jumbotron button a {
+  text-decoration: none;
+  color: #F5F5F5;
+}
+
+.body {
+  height: 480px;
+  background-color: #F5F5F5;
+}
+
+#services {
+  padding: 20px;
+}
+
+table {
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+  font-family: Verdana;
+}
+
+table th {
+  font-size: 42px;
+}
+
+table td {
+  margin: auto;
+  position: relative;
+  width: 350px;
+  height: 45px;
+}
+
+.services {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.footer {
+  height: 120px;
+  background-color: #002633;
+  margin: auto;
+}
+
+.copyright {
+  color: #F5F5F5;
+  text-align: center;
+  padding-top: 95px;
+  margin: 0px;
+  font-size: 11px;
+  font-weight: italic;
+  font-family: Verdana;
+}
+
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <div class="container">
+      <p><a href="">Alpha Blog</a></p>
+      <ul>
+        <li><%= link_to 'Accueil', root_path %></li>
+        <li>Team</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </div>
+  <div class="jumbotron">
+    <div class="container">
+      <h1 align="center">About Us</h1>
+      <h2 align="center">Our team of blog specialists make your projects come true</h2>
+      <center><button><a href="">Click Here To Start Today</a></button></center>
+    </div>
+  </div>
+  <div class="body">
+    <div class="container">
+      <table>
+        <thead>
+          <th colspan="3" id="services">Alpha Blog, The Blog Platform You Need:</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <%= image_tag 'web-design.png' %>
+            </td>
+            <td>
+              <%= image_tag 'webmastering.png' %>
+            </td>
+            <td>
+              <%= image_tag 'seo.png' %>
+            </td>
+          </tr>       
+          <tr>
+            <td class="services">
+              Beautiful Design
+            </td>
+            <td class="services">
+              Pro Functionalities
+            </td>
+            <td class="services">
+              Analytic Tools
+            </td>
+          </tr>         
+          <tr>
+            <td>
+              For <strong>beautiful</strong> blogs that you'll be proud to share with the world.
+            </td>
+            <td>
+              You administrate your blog and take care of everything online, <strong>hassle-free</strong>!
+            </td>
+            <td>
+              Measure how your blog is ranking in Google and make it perform even <strong>better</strong>!
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <p class="copyright">Copyright © Alpha Blog</p>
+    </div>
+  </div>  
+</body>
+</html>
