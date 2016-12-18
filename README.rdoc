@@ -1,1 +1,1 @@
-Ceci est le repository pour l'application Alpha Blog.
+Ceci est le repository pour l'application Alpha Blog (une super app, soit dit en passant).
