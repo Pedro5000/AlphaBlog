@@ -1,0 +1,15 @@
+<h1>Create an article</h1>
+
+<%= form_for @article do |bananeflambee| %>
+  <p>
+    <%= bananeflambee.label :title %><br/>
+    <%= bananeflambee.text_field :title %>
+  </p>
+  <p>
+    <%= bananeflambee.label :description %><br/>
+    <%= bananeflambee.text_area :description %>
+  </p>
+  <p>
+    <%= bananeflambee.submit %>
+  </p>
+<% end %>
