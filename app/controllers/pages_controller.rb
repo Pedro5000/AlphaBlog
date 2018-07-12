@@ -9,13 +9,4 @@ class PagesController < ApplicationController
     
   end
 
-
-  def accueil
-
-  end
-
-  def apropos
-
-  end
-
 end
